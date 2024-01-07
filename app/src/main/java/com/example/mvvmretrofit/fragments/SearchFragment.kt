@@ -51,8 +51,8 @@ private lateinit var searchRecyclerViewAdapter:FavouritesMealsAdapter
             searchMeals()
         }
         observeSearchMealsLiveData()
-         var searchJob:Job?=null
-           binding.edSearch.addTextChangedListener {seachquery->
+          var searchJob:Job?=null
+            binding.edSearch.addTextChangedListener {seachquery->
             searchJob?.cancel()
             // starting a new coroutines for this job
 
